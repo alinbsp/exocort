@@ -4,8 +4,6 @@
             [compojure.route :as route]
             [net.cgrand.enlive-html :as enlive]))
 
-(def index (enlive/html-resource "public/hello.html"))
-
 (defn st-render
   [static]
   (enlive/emit*
